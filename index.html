@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Style.css" />
+    <script src="fuelmass.js" defer></script>
+    <script src="range.js" defer></script>
+    <title>Aviation fuel simulator</title>
+  </head>
+  <body>
+    <h1>Aviation fuel simulator</h1>
+    <h3>Choose your aircraft</h3>
+    <h3>Set Fuel properties</h3>
+    <h3>Range</h3>
+    <h3>CO2 Estimate</h3>
+    <h4>Propellor</h4>
+    <h4>Commercial</h4>
+    <h4>Business</h4>
+    <ul>
+      King Air B100 Range : 1,325 nmi Length : 39 ft 11 in / 12.17 m Span : 45
+      ft 11 in / 14.0 m Height : 15 ft 5 in / 4.7 m Engine : 2xTPE-331-6-251B or
+      -252
+    </ul>
+    <ul>
+      Boeing 747-8 Range nm (km) : 7,730 nautical miles Length : 76.3 m (250 ft
+      2 in) Wingspan : 68.4 m (224 ft 5 in) Height : 19.4 m (63 ft 6 in) Engine
+      : GEnx-2B
+    </ul>
+    <ul>
+      CE-750 Citation X+ Range nm (km) : 3,460 nmi Length : 73 ft 7 in (22.43 m)
+      Wingspan : 69 ft 2 in (21.08 m) Height : 19 ft 3 in (5.87 m) Engine :
+      Rolls-Royce AE 3007C
+    </ul>
+    <!-- <input
+      type="image"
+      class="mainimage"
+      src="images\gary-lopater-dOOGrK3zcUc-unsplash.jpg"
+    /> -->
+    <div class="calorificvalueslidecontainer">
+      <input
+        type="range"
+        min="0"
+        max="120"
+        value="60"
+        class="slider"
+        id="cvRange"
+      />
+      <div id="value">0</div>
+    </div>
+
+    <div class="densityslidecontainer">
+      <input
+        type="range"
+        min="0"
+        max="1400"
+        value="700"
+        class="slider"
+        id="densRange"
+      />
+    </div>
+  </body>
+</html>
